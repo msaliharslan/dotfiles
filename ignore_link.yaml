@@ -1,0 +1,8 @@
+files:
+  - ignore_link.yaml
+  - .gitignore
+  - install.py
+  - LICENSE
+  - README.md
+directories:
+  - .git
