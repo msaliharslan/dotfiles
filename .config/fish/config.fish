@@ -8,3 +8,7 @@ set -g fish_greeting
 # Starhip prompt
 starship init fish | source
 
+# Aliases
+alias vim='nvim'
+alias ls='ls -la --color=auto' 
+
