@@ -12,3 +12,6 @@ starship init fish | source
 alias vim='nvim'
 alias ls='ls -la --color=auto' 
 
+set EDITOR "nvim"
+set VISUAL "nvim"
+
