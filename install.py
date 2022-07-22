@@ -27,7 +27,7 @@ print(seperator_line)
 print("Creating symbolic links to dotfiles")
 
 # Get the list of files & directories that are not supposed to be linked
-ignore_file = open("ignore_link.yaml", "r")
+ignore_file = open(os.path.abspath(f"{FILE_DIR}/ignore_link.yaml"), "r")
 ignore_dict = yaml.safe_load(ignore_file)
 ignore_file.close()
 
