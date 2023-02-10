@@ -127,6 +127,7 @@ return packer.startup({
         {"rafamadriz/friendly-snippets"}, -- Optional
       }
     })
+    use("lukas-reineke/lsp-format.nvim")
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
