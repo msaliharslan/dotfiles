@@ -89,7 +89,7 @@ local config = {
   },
   filters = {
     dotfiles = false,
-    custom = {"**/.git"}
+    custom = {"^\\.git"}
   }
 }
 
