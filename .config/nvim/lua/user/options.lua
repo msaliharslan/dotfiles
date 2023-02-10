@@ -1,57 +1,52 @@
--- Options
-local options = {
-  -- search
-  ignorecase = true,
-  smartcase = true,
-  hlsearch = false,
+-- search
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
-  -- higlight line
-  cursorline = true,
-  cursorlineopt = "screenline",
+-- higlight line
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "screenline"
 
-  -- indentation
-  tabstop = 2,
-  shiftwidth = 2,
-  expandtab = true,
-  smartindent = true,
+-- indentation
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.smartindent = true
 
-  -- line numbers
-  number = true,
-  relativenumber = true,
+-- line numbers
+vim.opt.number = true
+vim.opt.relativenumber = true
 
-  -- splits
-  splitbelow = true,
-  splitright = true,
+-- splits
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
-  -- files
-  backup = false,
-  swapfile = false,
-  undofile = true,
+-- files
+vim.opt.backup = false
+vim.opt.swapfile = false
+vim.opt.undofile = true
 
-  -- Time
-  timeoutlen = 500,
+-- Time
+vim.opt.timeoutlen = 500
 
-  -- miscalleneous
-  fileencoding = "utf-8",
-  scrolloff = 12,
-  sidescrolloff = 12,
-  signcolumn = 'yes:2',
-  showtabline = 2,
-  mouse = 'a',
-  termguicolors = true,
-  clipboard = "unnamedplus",
-  --cmdheight = 0,
-}
-
-
-for key, val in pairs(options) do
-  vim.opt[key] = val
-end
+-- miscalleneous
+vim.opt.fileencoding = "utf-8"
+vim.opt.scrolloff = 12
+vim.opt.sidescrolloff = 12
+vim.opt.signcolumn = 'yes:2'
+vim.opt.showtabline = 2
+vim.opt.mouse = 'a'
+vim.opt.termguicolors = true
+vim.opt.clipboard = "unnamedplus"
+vim.opt.wrap = false
+vim.opt.colorcolumn = "80"
+-- vim.opt.cmdheight = 0
 
 -- Restore cursor position
 vim.api.nvim_create_autocmd('BufReadPost', {
   pattern = '*',
   callback = function()
     vim.fn.setpos(".", vim.fn.getpos("'\""))
-  end,
+  end
 })

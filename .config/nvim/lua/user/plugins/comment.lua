@@ -4,4 +4,3 @@ if not ok then
 end
 
 comment.setup()
-
