@@ -66,3 +66,5 @@ vim.keymap.set("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>")
 vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>")
 vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>")
 
+-- Zen mode
+vim.keymap.set("n", "<leader>z", "<cmd>ZenMode<cr>")
